@@ -6,581 +6,581 @@ LOCAL_MODULE := libcrypto
 
 LOCAL_CFLAGS += -fPIC
 
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/aes/aes_cbc.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/aes/aes_cfb.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/aes/aes_core.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/aes/aes_ecb.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/aes/aes_ige.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/aes/aes_misc.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/aes/aes_ofb.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/aes/aes_wrap.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/a_bitstr.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/a_d2i_fp.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/a_digest.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/a_dup.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/a_gentm.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/a_i2d_fp.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/a_int.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/a_mbstr.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/a_object.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/a_octet.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/a_print.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/a_sign.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/a_strex.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/a_strnid.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/a_time.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/a_type.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/a_utctm.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/a_utf8.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/a_verify.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/ameth_lib.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/asn1_err.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/asn1_gen.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/asn1_item_list.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/asn1_lib.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/asn1_par.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/asn_mime.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/asn_moid.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/asn_mstbl.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/asn_pack.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/bio_asn1.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/bio_ndef.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/d2i_pr.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/d2i_pu.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/evp_asn1.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/f_int.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/f_string.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/i2d_pr.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/i2d_pu.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/n_pkey.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/nsseq.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/p5_pbe.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/p5_pbev2.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/p5_scrypt.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/p8_pkey.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/t_bitst.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/t_pkey.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/t_spki.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/tasn_dec.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/tasn_enc.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/tasn_fre.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/tasn_new.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/tasn_prn.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/tasn_scn.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/tasn_typ.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/tasn_utl.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/x_algor.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/x_bignum.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/x_info.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/x_long.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/x_pkey.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/x_sig.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/x_spki.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/asn1/x_val.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/async/arch/async_null.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/async/arch/async_posix.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/async/arch/async_win.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/async/async.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/async/async_err.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/async/async_wait.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bf/bf_cfb64.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bf/bf_ecb.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bf/bf_enc.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bf/bf_ofb64.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bf/bf_skey.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bio/b_addr.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bio/b_dump.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bio/b_print.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bio/b_sock.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bio/b_sock2.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bio/bf_buff.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bio/bf_lbuf.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bio/bf_nbio.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bio/bf_null.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bio/bio_cb.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bio/bio_err.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bio/bio_lib.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bio/bio_meth.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bio/bss_acpt.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bio/bss_bio.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bio/bss_conn.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bio/bss_dgram.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bio/bss_fd.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bio/bss_file.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bio/bss_log.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bio/bss_mem.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bio/bss_null.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bio/bss_sock.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/blake2/blake2b.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/blake2/blake2s.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/blake2/m_blake2b.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/blake2/m_blake2s.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bn/bn_add.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bn/bn_asm.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bn/bn_blind.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bn/bn_const.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bn/bn_ctx.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bn/bn_depr.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bn/bn_dh.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bn/bn_div.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bn/bn_err.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bn/bn_exp.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bn/bn_exp2.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bn/bn_gcd.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bn/bn_gf2m.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bn/bn_intern.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bn/bn_kron.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bn/bn_lib.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bn/bn_mod.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bn/bn_mont.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bn/bn_mpi.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bn/bn_mul.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bn/bn_nist.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bn/bn_prime.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bn/bn_print.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bn/bn_rand.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bn/bn_recp.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bn/bn_shift.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bn/bn_sqr.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bn/bn_sqrt.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bn/bn_srp.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bn/bn_word.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/bn/bn_x931p.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/buffer/buf_err.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/buffer/buffer.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/camellia/camellia.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/camellia/cmll_cbc.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/camellia/cmll_cfb.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/camellia/cmll_ctr.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/camellia/cmll_ecb.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/camellia/cmll_misc.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/camellia/cmll_ofb.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/cast/c_cfb64.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/cast/c_ecb.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/cast/c_enc.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/cast/c_ofb64.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/cast/c_skey.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/chacha/chacha_enc.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/cmac/cm_ameth.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/cmac/cm_pmeth.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/cmac/cmac.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/cms/cms_asn1.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/cms/cms_att.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/cms/cms_cd.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/cms/cms_dd.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/cms/cms_enc.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/cms/cms_env.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/cms/cms_err.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/cms/cms_ess.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/cms/cms_io.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/cms/cms_kari.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/cms/cms_lib.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/cms/cms_pwri.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/cms/cms_sd.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/cms/cms_smime.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/conf/conf_api.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/conf/conf_def.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/conf/conf_err.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/conf/conf_lib.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/conf/conf_mall.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/conf/conf_mod.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/conf/conf_sap.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/cpt_err.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/cryptlib.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ct/ct_b64.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ct/ct_err.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ct/ct_log.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ct/ct_oct.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ct/ct_policy.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ct/ct_prn.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ct/ct_sct.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ct/ct_sct_ctx.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ct/ct_vfy.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ct/ct_x509v3.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/cversion.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/des/cbc_cksm.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/des/cbc_enc.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/des/cfb64ede.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/des/cfb64enc.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/des/cfb_enc.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/des/des_enc.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/des/ecb3_enc.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/des/ecb_enc.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/des/fcrypt.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/des/fcrypt_b.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/des/ofb64ede.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/des/ofb64enc.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/des/ofb_enc.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/des/pcbc_enc.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/des/qud_cksm.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/des/rand_key.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/des/rpc_enc.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/des/set_key.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/des/str2key.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/des/xcbc_enc.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/dh/dh_ameth.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/dh/dh_asn1.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/dh/dh_check.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/dh/dh_depr.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/dh/dh_err.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/dh/dh_gen.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/dh/dh_kdf.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/dh/dh_key.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/dh/dh_lib.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/dh/dh_meth.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/dh/dh_pmeth.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/dh/dh_prn.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/dh/dh_rfc5114.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/dsa/dsa_ameth.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/dsa/dsa_asn1.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/dsa/dsa_depr.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/dsa/dsa_err.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/dsa/dsa_gen.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/dsa/dsa_key.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/dsa/dsa_lib.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/dsa/dsa_meth.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/dsa/dsa_ossl.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/dsa/dsa_pmeth.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/dsa/dsa_prn.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/dsa/dsa_sign.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/dsa/dsa_vrf.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/dso/dso_dl.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/dso/dso_dlfcn.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/dso/dso_err.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/dso/dso_lib.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/dso/dso_openssl.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/dso/dso_vms.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/dso/dso_win32.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ebcdic.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ec/curve25519.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ec/ec2_mult.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ec/ec2_oct.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ec/ec2_smpl.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ec/ec_ameth.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ec/ec_asn1.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ec/ec_check.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ec/ec_curve.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ec/ec_cvt.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ec/ec_err.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ec/ec_key.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ec/ec_kmeth.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ec/ec_lib.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ec/ec_mult.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ec/ec_oct.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ec/ec_pmeth.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ec/ec_print.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ec/ecdh_kdf.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ec/ecdh_ossl.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ec/ecdsa_ossl.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ec/ecdsa_sign.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ec/ecdsa_vrf.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ec/eck_prn.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ec/ecp_mont.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ec/ecp_nist.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ec/ecp_nistp224.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ec/ecp_nistp256.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ec/ecp_nistp521.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ec/ecp_nistputil.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ec/ecp_oct.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ec/ecp_smpl.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ec/ecx_meth.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/err/err.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/err/err_all.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/err/err_prn.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/bio_b64.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/bio_enc.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/bio_md.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/bio_ok.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/c_allc.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/c_alld.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/cmeth_lib.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/digest.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/e_aes.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/e_aes_cbc_hmac_sha1.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/e_aes_cbc_hmac_sha256.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/e_bf.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/e_camellia.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/e_cast.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/e_chacha20_poly1305.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/e_des.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/e_des3.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/e_idea.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/e_null.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/e_old.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/e_rc2.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/e_rc4.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/e_rc4_hmac_md5.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/e_rc5.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/e_seed.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/e_xcbc_d.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/encode.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/evp_cnf.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/evp_enc.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/evp_err.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/evp_key.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/evp_lib.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/evp_pbe.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/evp_pkey.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/m_md2.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/m_md4.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/m_md5.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/m_md5_sha1.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/m_mdc2.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/m_null.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/m_ripemd.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/m_sha1.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/m_sigver.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/m_wp.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/names.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/p5_crpt.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/p5_crpt2.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/p_dec.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/p_enc.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/p_lib.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/p_open.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/p_seal.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/p_sign.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/p_verify.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/pmeth_fn.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/pmeth_gn.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/pmeth_lib.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/evp/scrypt.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ex_data.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/hmac/hm_ameth.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/hmac/hm_pmeth.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/hmac/hmac.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/idea/i_cbc.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/idea/i_cfb64.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/idea/i_ecb.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/idea/i_ofb64.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/idea/i_skey.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/init.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/kdf/hkdf.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/kdf/kdf_err.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/kdf/tls1_prf.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/lhash/lh_stats.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/lhash/lhash.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/md4/md4_dgst.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/md4/md4_one.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/md5/md5_dgst.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/md5/md5_one.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/mdc2/mdc2_one.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/mdc2/mdc2dgst.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/mem.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/mem_clr.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/mem_dbg.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/mem_sec.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/modes/cbc128.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/modes/ccm128.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/modes/cfb128.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/modes/ctr128.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/modes/cts128.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/modes/gcm128.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/modes/ocb128.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/modes/ofb128.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/modes/wrap128.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/modes/xts128.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/o_dir.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/o_fips.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/o_fopen.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/o_init.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/o_str.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/o_time.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/objects/o_names.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/objects/obj_dat.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/objects/obj_err.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/objects/obj_lib.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/objects/obj_xref.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ocsp/ocsp_asn.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ocsp/ocsp_cl.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ocsp/ocsp_err.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ocsp/ocsp_ext.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ocsp/ocsp_ht.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ocsp/ocsp_lib.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ocsp/ocsp_prn.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ocsp/ocsp_srv.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ocsp/ocsp_vfy.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ocsp/v3_ocsp.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pem/pem_all.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pem/pem_err.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pem/pem_info.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pem/pem_lib.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pem/pem_oth.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pem/pem_pk8.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pem/pem_pkey.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pem/pem_sign.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pem/pem_x509.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pem/pem_xaux.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pem/pvkfmt.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pkcs12/p12_add.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pkcs12/p12_asn.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pkcs12/p12_attr.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pkcs12/p12_crpt.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pkcs12/p12_crt.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pkcs12/p12_decr.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pkcs12/p12_init.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pkcs12/p12_key.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pkcs12/p12_kiss.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pkcs12/p12_mutl.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pkcs12/p12_npas.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pkcs12/p12_p8d.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pkcs12/p12_p8e.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pkcs12/p12_sbag.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pkcs12/p12_utl.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pkcs12/pk12err.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pkcs7/bio_pk7.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pkcs7/pk7_asn1.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pkcs7/pk7_attr.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pkcs7/pk7_doit.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pkcs7/pk7_lib.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pkcs7/pk7_mime.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pkcs7/pk7_smime.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/pkcs7/pkcs7err.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/poly1305/poly1305.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rand/md_rand.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rand/rand_egd.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rand/rand_err.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rand/rand_lib.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rand/rand_unix.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rand/rand_vms.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rand/rand_win.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rand/randfile.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rc2/rc2_cbc.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rc2/rc2_ecb.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rc2/rc2_skey.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rc2/rc2cfb64.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rc2/rc2ofb64.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rc4/rc4_enc.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rc4/rc4_skey.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ripemd/rmd_dgst.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ripemd/rmd_one.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rsa/rsa_ameth.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rsa/rsa_asn1.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rsa/rsa_chk.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rsa/rsa_crpt.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rsa/rsa_depr.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rsa/rsa_err.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rsa/rsa_gen.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rsa/rsa_lib.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rsa/rsa_meth.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rsa/rsa_none.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rsa/rsa_null.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rsa/rsa_oaep.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rsa/rsa_ossl.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rsa/rsa_pk1.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rsa/rsa_pmeth.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rsa/rsa_prn.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rsa/rsa_pss.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rsa/rsa_saos.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rsa/rsa_sign.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rsa/rsa_ssl.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rsa/rsa_x931.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/rsa/rsa_x931g.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/seed/seed.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/seed/seed_cbc.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/seed/seed_cfb.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/seed/seed_ecb.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/seed/seed_ofb.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/sha/sha1_one.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/sha/sha1dgst.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/sha/sha256.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/sha/sha512.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/srp/srp_lib.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/srp/srp_vfy.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/stack/stack.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/threads_none.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/threads_pthread.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/threads_win.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ts/ts_asn1.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ts/ts_conf.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ts/ts_err.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ts/ts_lib.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ts/ts_req_print.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ts/ts_req_utils.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ts/ts_rsp_print.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ts/ts_rsp_sign.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ts/ts_rsp_utils.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ts/ts_rsp_verify.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ts/ts_verify_ctx.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/txt_db/txt_db.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ui/ui_err.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ui/ui_lib.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ui/ui_openssl.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/ui/ui_util.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/uid.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/whrlpool/wp_block.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/whrlpool/wp_dgst.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/by_dir.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/by_file.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/t_crl.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/t_req.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/t_x509.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/x509_att.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/x509_cmp.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/x509_d2.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/x509_def.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/x509_err.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/x509_ext.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/x509_lu.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/x509_obj.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/x509_r2x.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/x509_req.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/x509_set.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/x509_trs.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/x509_txt.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/x509_v3.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/x509_vfy.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/x509_vpm.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/x509cset.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/x509name.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/x509rset.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/x509spki.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/x509type.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/x_all.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/x_attrib.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/x_crl.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/x_exten.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/x_name.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/x_pubkey.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/x_req.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/x_x509.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509/x_x509a.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/pcy_cache.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/pcy_data.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/pcy_lib.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/pcy_map.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/pcy_node.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/pcy_tree.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/v3_addr.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/v3_akey.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/v3_akeya.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/v3_alt.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/v3_asid.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/v3_bcons.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/v3_bitst.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/v3_conf.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/v3_cpols.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/v3_crld.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/v3_enum.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/v3_extku.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/v3_genn.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/v3_ia5.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/v3_info.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/v3_int.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/v3_lib.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/v3_ncons.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/v3_pci.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/v3_pcia.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/v3_pcons.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/v3_pku.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/v3_pmaps.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/v3_prn.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/v3_purp.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/v3_skey.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/v3_sxnet.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/v3_tlsf.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/v3_utl.c \
-LOCAL_SRC_FILES += $(LOCAL_PATH)/../../src/crypto/x509v3/v3err.c
+LOCAL_SRC_FILES := $(LOCAL_PATH)/../../src/crypto/aes/aes_cbc.c \
+$(LOCAL_PATH)/../../src/crypto/aes/aes_cfb.c \
+$(LOCAL_PATH)/../../src/crypto/aes/aes_core.c \
+$(LOCAL_PATH)/../../src/crypto/aes/aes_ecb.c \
+$(LOCAL_PATH)/../../src/crypto/aes/aes_ige.c \
+$(LOCAL_PATH)/../../src/crypto/aes/aes_misc.c \
+$(LOCAL_PATH)/../../src/crypto/aes/aes_ofb.c \
+$(LOCAL_PATH)/../../src/crypto/aes/aes_wrap.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/a_bitstr.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/a_d2i_fp.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/a_digest.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/a_dup.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/a_gentm.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/a_i2d_fp.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/a_int.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/a_mbstr.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/a_object.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/a_octet.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/a_print.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/a_sign.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/a_strex.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/a_strnid.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/a_time.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/a_type.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/a_utctm.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/a_utf8.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/a_verify.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/ameth_lib.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/asn1_err.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/asn1_gen.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/asn1_item_list.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/asn1_lib.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/asn1_par.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/asn_mime.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/asn_moid.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/asn_mstbl.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/asn_pack.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/bio_asn1.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/bio_ndef.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/d2i_pr.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/d2i_pu.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/evp_asn1.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/f_int.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/f_string.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/i2d_pr.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/i2d_pu.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/n_pkey.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/nsseq.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/p5_pbe.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/p5_pbev2.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/p5_scrypt.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/p8_pkey.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/t_bitst.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/t_pkey.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/t_spki.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/tasn_dec.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/tasn_enc.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/tasn_fre.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/tasn_new.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/tasn_prn.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/tasn_scn.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/tasn_typ.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/tasn_utl.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/x_algor.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/x_bignum.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/x_info.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/x_long.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/x_pkey.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/x_sig.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/x_spki.c \
+$(LOCAL_PATH)/../../src/crypto/asn1/x_val.c \
+$(LOCAL_PATH)/../../src/crypto/async/arch/async_null.c \
+$(LOCAL_PATH)/../../src/crypto/async/arch/async_posix.c \
+$(LOCAL_PATH)/../../src/crypto/async/arch/async_win.c \
+$(LOCAL_PATH)/../../src/crypto/async/async.c \
+$(LOCAL_PATH)/../../src/crypto/async/async_err.c \
+$(LOCAL_PATH)/../../src/crypto/async/async_wait.c \
+$(LOCAL_PATH)/../../src/crypto/bf/bf_cfb64.c \
+$(LOCAL_PATH)/../../src/crypto/bf/bf_ecb.c \
+$(LOCAL_PATH)/../../src/crypto/bf/bf_enc.c \
+$(LOCAL_PATH)/../../src/crypto/bf/bf_ofb64.c \
+$(LOCAL_PATH)/../../src/crypto/bf/bf_skey.c \
+$(LOCAL_PATH)/../../src/crypto/bio/b_addr.c \
+$(LOCAL_PATH)/../../src/crypto/bio/b_dump.c \
+$(LOCAL_PATH)/../../src/crypto/bio/b_print.c \
+$(LOCAL_PATH)/../../src/crypto/bio/b_sock.c \
+$(LOCAL_PATH)/../../src/crypto/bio/b_sock2.c \
+$(LOCAL_PATH)/../../src/crypto/bio/bf_buff.c \
+$(LOCAL_PATH)/../../src/crypto/bio/bf_lbuf.c \
+$(LOCAL_PATH)/../../src/crypto/bio/bf_nbio.c \
+$(LOCAL_PATH)/../../src/crypto/bio/bf_null.c \
+$(LOCAL_PATH)/../../src/crypto/bio/bio_cb.c \
+$(LOCAL_PATH)/../../src/crypto/bio/bio_err.c \
+$(LOCAL_PATH)/../../src/crypto/bio/bio_lib.c \
+$(LOCAL_PATH)/../../src/crypto/bio/bio_meth.c \
+$(LOCAL_PATH)/../../src/crypto/bio/bss_acpt.c \
+$(LOCAL_PATH)/../../src/crypto/bio/bss_bio.c \
+$(LOCAL_PATH)/../../src/crypto/bio/bss_conn.c \
+$(LOCAL_PATH)/../../src/crypto/bio/bss_dgram.c \
+$(LOCAL_PATH)/../../src/crypto/bio/bss_fd.c \
+$(LOCAL_PATH)/../../src/crypto/bio/bss_file.c \
+$(LOCAL_PATH)/../../src/crypto/bio/bss_log.c \
+$(LOCAL_PATH)/../../src/crypto/bio/bss_mem.c \
+$(LOCAL_PATH)/../../src/crypto/bio/bss_null.c \
+$(LOCAL_PATH)/../../src/crypto/bio/bss_sock.c \
+$(LOCAL_PATH)/../../src/crypto/blake2/blake2b.c \
+$(LOCAL_PATH)/../../src/crypto/blake2/blake2s.c \
+$(LOCAL_PATH)/../../src/crypto/blake2/m_blake2b.c \
+$(LOCAL_PATH)/../../src/crypto/blake2/m_blake2s.c \
+$(LOCAL_PATH)/../../src/crypto/bn/bn_add.c \
+$(LOCAL_PATH)/../../src/crypto/bn/bn_asm.c \
+$(LOCAL_PATH)/../../src/crypto/bn/bn_blind.c \
+$(LOCAL_PATH)/../../src/crypto/bn/bn_const.c \
+$(LOCAL_PATH)/../../src/crypto/bn/bn_ctx.c \
+$(LOCAL_PATH)/../../src/crypto/bn/bn_depr.c \
+$(LOCAL_PATH)/../../src/crypto/bn/bn_dh.c \
+$(LOCAL_PATH)/../../src/crypto/bn/bn_div.c \
+$(LOCAL_PATH)/../../src/crypto/bn/bn_err.c \
+$(LOCAL_PATH)/../../src/crypto/bn/bn_exp.c \
+$(LOCAL_PATH)/../../src/crypto/bn/bn_exp2.c \
+$(LOCAL_PATH)/../../src/crypto/bn/bn_gcd.c \
+$(LOCAL_PATH)/../../src/crypto/bn/bn_gf2m.c \
+$(LOCAL_PATH)/../../src/crypto/bn/bn_intern.c \
+$(LOCAL_PATH)/../../src/crypto/bn/bn_kron.c \
+$(LOCAL_PATH)/../../src/crypto/bn/bn_lib.c \
+$(LOCAL_PATH)/../../src/crypto/bn/bn_mod.c \
+$(LOCAL_PATH)/../../src/crypto/bn/bn_mont.c \
+$(LOCAL_PATH)/../../src/crypto/bn/bn_mpi.c \
+$(LOCAL_PATH)/../../src/crypto/bn/bn_mul.c \
+$(LOCAL_PATH)/../../src/crypto/bn/bn_nist.c \
+$(LOCAL_PATH)/../../src/crypto/bn/bn_prime.c \
+$(LOCAL_PATH)/../../src/crypto/bn/bn_print.c \
+$(LOCAL_PATH)/../../src/crypto/bn/bn_rand.c \
+$(LOCAL_PATH)/../../src/crypto/bn/bn_recp.c \
+$(LOCAL_PATH)/../../src/crypto/bn/bn_shift.c \
+$(LOCAL_PATH)/../../src/crypto/bn/bn_sqr.c \
+$(LOCAL_PATH)/../../src/crypto/bn/bn_sqrt.c \
+$(LOCAL_PATH)/../../src/crypto/bn/bn_srp.c \
+$(LOCAL_PATH)/../../src/crypto/bn/bn_word.c \
+$(LOCAL_PATH)/../../src/crypto/bn/bn_x931p.c \
+$(LOCAL_PATH)/../../src/crypto/buffer/buf_err.c \
+$(LOCAL_PATH)/../../src/crypto/buffer/buffer.c \
+$(LOCAL_PATH)/../../src/crypto/camellia/camellia.c \
+$(LOCAL_PATH)/../../src/crypto/camellia/cmll_cbc.c \
+$(LOCAL_PATH)/../../src/crypto/camellia/cmll_cfb.c \
+$(LOCAL_PATH)/../../src/crypto/camellia/cmll_ctr.c \
+$(LOCAL_PATH)/../../src/crypto/camellia/cmll_ecb.c \
+$(LOCAL_PATH)/../../src/crypto/camellia/cmll_misc.c \
+$(LOCAL_PATH)/../../src/crypto/camellia/cmll_ofb.c \
+$(LOCAL_PATH)/../../src/crypto/cast/c_cfb64.c \
+$(LOCAL_PATH)/../../src/crypto/cast/c_ecb.c \
+$(LOCAL_PATH)/../../src/crypto/cast/c_enc.c \
+$(LOCAL_PATH)/../../src/crypto/cast/c_ofb64.c \
+$(LOCAL_PATH)/../../src/crypto/cast/c_skey.c \
+$(LOCAL_PATH)/../../src/crypto/chacha/chacha_enc.c \
+$(LOCAL_PATH)/../../src/crypto/cmac/cm_ameth.c \
+$(LOCAL_PATH)/../../src/crypto/cmac/cm_pmeth.c \
+$(LOCAL_PATH)/../../src/crypto/cmac/cmac.c \
+$(LOCAL_PATH)/../../src/crypto/cms/cms_asn1.c \
+$(LOCAL_PATH)/../../src/crypto/cms/cms_att.c \
+$(LOCAL_PATH)/../../src/crypto/cms/cms_cd.c \
+$(LOCAL_PATH)/../../src/crypto/cms/cms_dd.c \
+$(LOCAL_PATH)/../../src/crypto/cms/cms_enc.c \
+$(LOCAL_PATH)/../../src/crypto/cms/cms_env.c \
+$(LOCAL_PATH)/../../src/crypto/cms/cms_err.c \
+$(LOCAL_PATH)/../../src/crypto/cms/cms_ess.c \
+$(LOCAL_PATH)/../../src/crypto/cms/cms_io.c \
+$(LOCAL_PATH)/../../src/crypto/cms/cms_kari.c \
+$(LOCAL_PATH)/../../src/crypto/cms/cms_lib.c \
+$(LOCAL_PATH)/../../src/crypto/cms/cms_pwri.c \
+$(LOCAL_PATH)/../../src/crypto/cms/cms_sd.c \
+$(LOCAL_PATH)/../../src/crypto/cms/cms_smime.c \
+$(LOCAL_PATH)/../../src/crypto/conf/conf_api.c \
+$(LOCAL_PATH)/../../src/crypto/conf/conf_def.c \
+$(LOCAL_PATH)/../../src/crypto/conf/conf_err.c \
+$(LOCAL_PATH)/../../src/crypto/conf/conf_lib.c \
+$(LOCAL_PATH)/../../src/crypto/conf/conf_mall.c \
+$(LOCAL_PATH)/../../src/crypto/conf/conf_mod.c \
+$(LOCAL_PATH)/../../src/crypto/conf/conf_sap.c \
+$(LOCAL_PATH)/../../src/crypto/cpt_err.c \
+$(LOCAL_PATH)/../../src/crypto/cryptlib.c \
+$(LOCAL_PATH)/../../src/crypto/ct/ct_b64.c \
+$(LOCAL_PATH)/../../src/crypto/ct/ct_err.c \
+$(LOCAL_PATH)/../../src/crypto/ct/ct_log.c \
+$(LOCAL_PATH)/../../src/crypto/ct/ct_oct.c \
+$(LOCAL_PATH)/../../src/crypto/ct/ct_policy.c \
+$(LOCAL_PATH)/../../src/crypto/ct/ct_prn.c \
+$(LOCAL_PATH)/../../src/crypto/ct/ct_sct.c \
+$(LOCAL_PATH)/../../src/crypto/ct/ct_sct_ctx.c \
+$(LOCAL_PATH)/../../src/crypto/ct/ct_vfy.c \
+$(LOCAL_PATH)/../../src/crypto/ct/ct_x509v3.c \
+$(LOCAL_PATH)/../../src/crypto/cversion.c \
+$(LOCAL_PATH)/../../src/crypto/des/cbc_cksm.c \
+$(LOCAL_PATH)/../../src/crypto/des/cbc_enc.c \
+$(LOCAL_PATH)/../../src/crypto/des/cfb64ede.c \
+$(LOCAL_PATH)/../../src/crypto/des/cfb64enc.c \
+$(LOCAL_PATH)/../../src/crypto/des/cfb_enc.c \
+$(LOCAL_PATH)/../../src/crypto/des/des_enc.c \
+$(LOCAL_PATH)/../../src/crypto/des/ecb3_enc.c \
+$(LOCAL_PATH)/../../src/crypto/des/ecb_enc.c \
+$(LOCAL_PATH)/../../src/crypto/des/fcrypt.c \
+$(LOCAL_PATH)/../../src/crypto/des/fcrypt_b.c \
+$(LOCAL_PATH)/../../src/crypto/des/ofb64ede.c \
+$(LOCAL_PATH)/../../src/crypto/des/ofb64enc.c \
+$(LOCAL_PATH)/../../src/crypto/des/ofb_enc.c \
+$(LOCAL_PATH)/../../src/crypto/des/pcbc_enc.c \
+$(LOCAL_PATH)/../../src/crypto/des/qud_cksm.c \
+$(LOCAL_PATH)/../../src/crypto/des/rand_key.c \
+$(LOCAL_PATH)/../../src/crypto/des/rpc_enc.c \
+$(LOCAL_PATH)/../../src/crypto/des/set_key.c \
+$(LOCAL_PATH)/../../src/crypto/des/str2key.c \
+$(LOCAL_PATH)/../../src/crypto/des/xcbc_enc.c \
+$(LOCAL_PATH)/../../src/crypto/dh/dh_ameth.c \
+$(LOCAL_PATH)/../../src/crypto/dh/dh_asn1.c \
+$(LOCAL_PATH)/../../src/crypto/dh/dh_check.c \
+$(LOCAL_PATH)/../../src/crypto/dh/dh_depr.c \
+$(LOCAL_PATH)/../../src/crypto/dh/dh_err.c \
+$(LOCAL_PATH)/../../src/crypto/dh/dh_gen.c \
+$(LOCAL_PATH)/../../src/crypto/dh/dh_kdf.c \
+$(LOCAL_PATH)/../../src/crypto/dh/dh_key.c \
+$(LOCAL_PATH)/../../src/crypto/dh/dh_lib.c \
+$(LOCAL_PATH)/../../src/crypto/dh/dh_meth.c \
+$(LOCAL_PATH)/../../src/crypto/dh/dh_pmeth.c \
+$(LOCAL_PATH)/../../src/crypto/dh/dh_prn.c \
+$(LOCAL_PATH)/../../src/crypto/dh/dh_rfc5114.c \
+$(LOCAL_PATH)/../../src/crypto/dsa/dsa_ameth.c \
+$(LOCAL_PATH)/../../src/crypto/dsa/dsa_asn1.c \
+$(LOCAL_PATH)/../../src/crypto/dsa/dsa_depr.c \
+$(LOCAL_PATH)/../../src/crypto/dsa/dsa_err.c \
+$(LOCAL_PATH)/../../src/crypto/dsa/dsa_gen.c \
+$(LOCAL_PATH)/../../src/crypto/dsa/dsa_key.c \
+$(LOCAL_PATH)/../../src/crypto/dsa/dsa_lib.c \
+$(LOCAL_PATH)/../../src/crypto/dsa/dsa_meth.c \
+$(LOCAL_PATH)/../../src/crypto/dsa/dsa_ossl.c \
+$(LOCAL_PATH)/../../src/crypto/dsa/dsa_pmeth.c \
+$(LOCAL_PATH)/../../src/crypto/dsa/dsa_prn.c \
+$(LOCAL_PATH)/../../src/crypto/dsa/dsa_sign.c \
+$(LOCAL_PATH)/../../src/crypto/dsa/dsa_vrf.c \
+$(LOCAL_PATH)/../../src/crypto/dso/dso_dl.c \
+$(LOCAL_PATH)/../../src/crypto/dso/dso_dlfcn.c \
+$(LOCAL_PATH)/../../src/crypto/dso/dso_err.c \
+$(LOCAL_PATH)/../../src/crypto/dso/dso_lib.c \
+$(LOCAL_PATH)/../../src/crypto/dso/dso_openssl.c \
+$(LOCAL_PATH)/../../src/crypto/dso/dso_vms.c \
+$(LOCAL_PATH)/../../src/crypto/dso/dso_win32.c \
+$(LOCAL_PATH)/../../src/crypto/ebcdic.c \
+$(LOCAL_PATH)/../../src/crypto/ec/curve25519.c \
+$(LOCAL_PATH)/../../src/crypto/ec/ec2_mult.c \
+$(LOCAL_PATH)/../../src/crypto/ec/ec2_oct.c \
+$(LOCAL_PATH)/../../src/crypto/ec/ec2_smpl.c \
+$(LOCAL_PATH)/../../src/crypto/ec/ec_ameth.c \
+$(LOCAL_PATH)/../../src/crypto/ec/ec_asn1.c \
+$(LOCAL_PATH)/../../src/crypto/ec/ec_check.c \
+$(LOCAL_PATH)/../../src/crypto/ec/ec_curve.c \
+$(LOCAL_PATH)/../../src/crypto/ec/ec_cvt.c \
+$(LOCAL_PATH)/../../src/crypto/ec/ec_err.c \
+$(LOCAL_PATH)/../../src/crypto/ec/ec_key.c \
+$(LOCAL_PATH)/../../src/crypto/ec/ec_kmeth.c \
+$(LOCAL_PATH)/../../src/crypto/ec/ec_lib.c \
+$(LOCAL_PATH)/../../src/crypto/ec/ec_mult.c \
+$(LOCAL_PATH)/../../src/crypto/ec/ec_oct.c \
+$(LOCAL_PATH)/../../src/crypto/ec/ec_pmeth.c \
+$(LOCAL_PATH)/../../src/crypto/ec/ec_print.c \
+$(LOCAL_PATH)/../../src/crypto/ec/ecdh_kdf.c \
+$(LOCAL_PATH)/../../src/crypto/ec/ecdh_ossl.c \
+$(LOCAL_PATH)/../../src/crypto/ec/ecdsa_ossl.c \
+$(LOCAL_PATH)/../../src/crypto/ec/ecdsa_sign.c \
+$(LOCAL_PATH)/../../src/crypto/ec/ecdsa_vrf.c \
+$(LOCAL_PATH)/../../src/crypto/ec/eck_prn.c \
+$(LOCAL_PATH)/../../src/crypto/ec/ecp_mont.c \
+$(LOCAL_PATH)/../../src/crypto/ec/ecp_nist.c \
+$(LOCAL_PATH)/../../src/crypto/ec/ecp_nistp224.c \
+$(LOCAL_PATH)/../../src/crypto/ec/ecp_nistp256.c \
+$(LOCAL_PATH)/../../src/crypto/ec/ecp_nistp521.c \
+$(LOCAL_PATH)/../../src/crypto/ec/ecp_nistputil.c \
+$(LOCAL_PATH)/../../src/crypto/ec/ecp_oct.c \
+$(LOCAL_PATH)/../../src/crypto/ec/ecp_smpl.c \
+$(LOCAL_PATH)/../../src/crypto/ec/ecx_meth.c \
+$(LOCAL_PATH)/../../src/crypto/err/err.c \
+$(LOCAL_PATH)/../../src/crypto/err/err_all.c \
+$(LOCAL_PATH)/../../src/crypto/err/err_prn.c \
+$(LOCAL_PATH)/../../src/crypto/evp/bio_b64.c \
+$(LOCAL_PATH)/../../src/crypto/evp/bio_enc.c \
+$(LOCAL_PATH)/../../src/crypto/evp/bio_md.c \
+$(LOCAL_PATH)/../../src/crypto/evp/bio_ok.c \
+$(LOCAL_PATH)/../../src/crypto/evp/c_allc.c \
+$(LOCAL_PATH)/../../src/crypto/evp/c_alld.c \
+$(LOCAL_PATH)/../../src/crypto/evp/cmeth_lib.c \
+$(LOCAL_PATH)/../../src/crypto/evp/digest.c \
+$(LOCAL_PATH)/../../src/crypto/evp/e_aes.c \
+$(LOCAL_PATH)/../../src/crypto/evp/e_aes_cbc_hmac_sha1.c \
+$(LOCAL_PATH)/../../src/crypto/evp/e_aes_cbc_hmac_sha256.c \
+$(LOCAL_PATH)/../../src/crypto/evp/e_bf.c \
+$(LOCAL_PATH)/../../src/crypto/evp/e_camellia.c \
+$(LOCAL_PATH)/../../src/crypto/evp/e_cast.c \
+$(LOCAL_PATH)/../../src/crypto/evp/e_chacha20_poly1305.c \
+$(LOCAL_PATH)/../../src/crypto/evp/e_des.c \
+$(LOCAL_PATH)/../../src/crypto/evp/e_des3.c \
+$(LOCAL_PATH)/../../src/crypto/evp/e_idea.c \
+$(LOCAL_PATH)/../../src/crypto/evp/e_null.c \
+$(LOCAL_PATH)/../../src/crypto/evp/e_old.c \
+$(LOCAL_PATH)/../../src/crypto/evp/e_rc2.c \
+$(LOCAL_PATH)/../../src/crypto/evp/e_rc4.c \
+$(LOCAL_PATH)/../../src/crypto/evp/e_rc4_hmac_md5.c \
+$(LOCAL_PATH)/../../src/crypto/evp/e_rc5.c \
+$(LOCAL_PATH)/../../src/crypto/evp/e_seed.c \
+$(LOCAL_PATH)/../../src/crypto/evp/e_xcbc_d.c \
+$(LOCAL_PATH)/../../src/crypto/evp/encode.c \
+$(LOCAL_PATH)/../../src/crypto/evp/evp_cnf.c \
+$(LOCAL_PATH)/../../src/crypto/evp/evp_enc.c \
+$(LOCAL_PATH)/../../src/crypto/evp/evp_err.c \
+$(LOCAL_PATH)/../../src/crypto/evp/evp_key.c \
+$(LOCAL_PATH)/../../src/crypto/evp/evp_lib.c \
+$(LOCAL_PATH)/../../src/crypto/evp/evp_pbe.c \
+$(LOCAL_PATH)/../../src/crypto/evp/evp_pkey.c \
+$(LOCAL_PATH)/../../src/crypto/evp/m_md2.c \
+$(LOCAL_PATH)/../../src/crypto/evp/m_md4.c \
+$(LOCAL_PATH)/../../src/crypto/evp/m_md5.c \
+$(LOCAL_PATH)/../../src/crypto/evp/m_md5_sha1.c \
+$(LOCAL_PATH)/../../src/crypto/evp/m_mdc2.c \
+$(LOCAL_PATH)/../../src/crypto/evp/m_null.c \
+$(LOCAL_PATH)/../../src/crypto/evp/m_ripemd.c \
+$(LOCAL_PATH)/../../src/crypto/evp/m_sha1.c \
+$(LOCAL_PATH)/../../src/crypto/evp/m_sigver.c \
+$(LOCAL_PATH)/../../src/crypto/evp/m_wp.c \
+$(LOCAL_PATH)/../../src/crypto/evp/names.c \
+$(LOCAL_PATH)/../../src/crypto/evp/p5_crpt.c \
+$(LOCAL_PATH)/../../src/crypto/evp/p5_crpt2.c \
+$(LOCAL_PATH)/../../src/crypto/evp/p_dec.c \
+$(LOCAL_PATH)/../../src/crypto/evp/p_enc.c \
+$(LOCAL_PATH)/../../src/crypto/evp/p_lib.c \
+$(LOCAL_PATH)/../../src/crypto/evp/p_open.c \
+$(LOCAL_PATH)/../../src/crypto/evp/p_seal.c \
+$(LOCAL_PATH)/../../src/crypto/evp/p_sign.c \
+$(LOCAL_PATH)/../../src/crypto/evp/p_verify.c \
+$(LOCAL_PATH)/../../src/crypto/evp/pmeth_fn.c \
+$(LOCAL_PATH)/../../src/crypto/evp/pmeth_gn.c \
+$(LOCAL_PATH)/../../src/crypto/evp/pmeth_lib.c \
+$(LOCAL_PATH)/../../src/crypto/evp/scrypt.c \
+$(LOCAL_PATH)/../../src/crypto/ex_data.c \
+$(LOCAL_PATH)/../../src/crypto/hmac/hm_ameth.c \
+$(LOCAL_PATH)/../../src/crypto/hmac/hm_pmeth.c \
+$(LOCAL_PATH)/../../src/crypto/hmac/hmac.c \
+$(LOCAL_PATH)/../../src/crypto/idea/i_cbc.c \
+$(LOCAL_PATH)/../../src/crypto/idea/i_cfb64.c \
+$(LOCAL_PATH)/../../src/crypto/idea/i_ecb.c \
+$(LOCAL_PATH)/../../src/crypto/idea/i_ofb64.c \
+$(LOCAL_PATH)/../../src/crypto/idea/i_skey.c \
+$(LOCAL_PATH)/../../src/crypto/init.c \
+$(LOCAL_PATH)/../../src/crypto/kdf/hkdf.c \
+$(LOCAL_PATH)/../../src/crypto/kdf/kdf_err.c \
+$(LOCAL_PATH)/../../src/crypto/kdf/tls1_prf.c \
+$(LOCAL_PATH)/../../src/crypto/lhash/lh_stats.c \
+$(LOCAL_PATH)/../../src/crypto/lhash/lhash.c \
+$(LOCAL_PATH)/../../src/crypto/md4/md4_dgst.c \
+$(LOCAL_PATH)/../../src/crypto/md4/md4_one.c \
+$(LOCAL_PATH)/../../src/crypto/md5/md5_dgst.c \
+$(LOCAL_PATH)/../../src/crypto/md5/md5_one.c \
+$(LOCAL_PATH)/../../src/crypto/mdc2/mdc2_one.c \
+$(LOCAL_PATH)/../../src/crypto/mdc2/mdc2dgst.c \
+$(LOCAL_PATH)/../../src/crypto/mem.c \
+$(LOCAL_PATH)/../../src/crypto/mem_clr.c \
+$(LOCAL_PATH)/../../src/crypto/mem_dbg.c \
+$(LOCAL_PATH)/../../src/crypto/mem_sec.c \
+$(LOCAL_PATH)/../../src/crypto/modes/cbc128.c \
+$(LOCAL_PATH)/../../src/crypto/modes/ccm128.c \
+$(LOCAL_PATH)/../../src/crypto/modes/cfb128.c \
+$(LOCAL_PATH)/../../src/crypto/modes/ctr128.c \
+$(LOCAL_PATH)/../../src/crypto/modes/cts128.c \
+$(LOCAL_PATH)/../../src/crypto/modes/gcm128.c \
+$(LOCAL_PATH)/../../src/crypto/modes/ocb128.c \
+$(LOCAL_PATH)/../../src/crypto/modes/ofb128.c \
+$(LOCAL_PATH)/../../src/crypto/modes/wrap128.c \
+$(LOCAL_PATH)/../../src/crypto/modes/xts128.c \
+$(LOCAL_PATH)/../../src/crypto/o_dir.c \
+$(LOCAL_PATH)/../../src/crypto/o_fips.c \
+$(LOCAL_PATH)/../../src/crypto/o_fopen.c \
+$(LOCAL_PATH)/../../src/crypto/o_init.c \
+$(LOCAL_PATH)/../../src/crypto/o_str.c \
+$(LOCAL_PATH)/../../src/crypto/o_time.c \
+$(LOCAL_PATH)/../../src/crypto/objects/o_names.c \
+$(LOCAL_PATH)/../../src/crypto/objects/obj_dat.c \
+$(LOCAL_PATH)/../../src/crypto/objects/obj_err.c \
+$(LOCAL_PATH)/../../src/crypto/objects/obj_lib.c \
+$(LOCAL_PATH)/../../src/crypto/objects/obj_xref.c \
+$(LOCAL_PATH)/../../src/crypto/ocsp/ocsp_asn.c \
+$(LOCAL_PATH)/../../src/crypto/ocsp/ocsp_cl.c \
+$(LOCAL_PATH)/../../src/crypto/ocsp/ocsp_err.c \
+$(LOCAL_PATH)/../../src/crypto/ocsp/ocsp_ext.c \
+$(LOCAL_PATH)/../../src/crypto/ocsp/ocsp_ht.c \
+$(LOCAL_PATH)/../../src/crypto/ocsp/ocsp_lib.c \
+$(LOCAL_PATH)/../../src/crypto/ocsp/ocsp_prn.c \
+$(LOCAL_PATH)/../../src/crypto/ocsp/ocsp_srv.c \
+$(LOCAL_PATH)/../../src/crypto/ocsp/ocsp_vfy.c \
+$(LOCAL_PATH)/../../src/crypto/ocsp/v3_ocsp.c \
+$(LOCAL_PATH)/../../src/crypto/pem/pem_all.c \
+$(LOCAL_PATH)/../../src/crypto/pem/pem_err.c \
+$(LOCAL_PATH)/../../src/crypto/pem/pem_info.c \
+$(LOCAL_PATH)/../../src/crypto/pem/pem_lib.c \
+$(LOCAL_PATH)/../../src/crypto/pem/pem_oth.c \
+$(LOCAL_PATH)/../../src/crypto/pem/pem_pk8.c \
+$(LOCAL_PATH)/../../src/crypto/pem/pem_pkey.c \
+$(LOCAL_PATH)/../../src/crypto/pem/pem_sign.c \
+$(LOCAL_PATH)/../../src/crypto/pem/pem_x509.c \
+$(LOCAL_PATH)/../../src/crypto/pem/pem_xaux.c \
+$(LOCAL_PATH)/../../src/crypto/pem/pvkfmt.c \
+$(LOCAL_PATH)/../../src/crypto/pkcs12/p12_add.c \
+$(LOCAL_PATH)/../../src/crypto/pkcs12/p12_asn.c \
+$(LOCAL_PATH)/../../src/crypto/pkcs12/p12_attr.c \
+$(LOCAL_PATH)/../../src/crypto/pkcs12/p12_crpt.c \
+$(LOCAL_PATH)/../../src/crypto/pkcs12/p12_crt.c \
+$(LOCAL_PATH)/../../src/crypto/pkcs12/p12_decr.c \
+$(LOCAL_PATH)/../../src/crypto/pkcs12/p12_init.c \
+$(LOCAL_PATH)/../../src/crypto/pkcs12/p12_key.c \
+$(LOCAL_PATH)/../../src/crypto/pkcs12/p12_kiss.c \
+$(LOCAL_PATH)/../../src/crypto/pkcs12/p12_mutl.c \
+$(LOCAL_PATH)/../../src/crypto/pkcs12/p12_npas.c \
+$(LOCAL_PATH)/../../src/crypto/pkcs12/p12_p8d.c \
+$(LOCAL_PATH)/../../src/crypto/pkcs12/p12_p8e.c \
+$(LOCAL_PATH)/../../src/crypto/pkcs12/p12_sbag.c \
+$(LOCAL_PATH)/../../src/crypto/pkcs12/p12_utl.c \
+$(LOCAL_PATH)/../../src/crypto/pkcs12/pk12err.c \
+$(LOCAL_PATH)/../../src/crypto/pkcs7/bio_pk7.c \
+$(LOCAL_PATH)/../../src/crypto/pkcs7/pk7_asn1.c \
+$(LOCAL_PATH)/../../src/crypto/pkcs7/pk7_attr.c \
+$(LOCAL_PATH)/../../src/crypto/pkcs7/pk7_doit.c \
+$(LOCAL_PATH)/../../src/crypto/pkcs7/pk7_lib.c \
+$(LOCAL_PATH)/../../src/crypto/pkcs7/pk7_mime.c \
+$(LOCAL_PATH)/../../src/crypto/pkcs7/pk7_smime.c \
+$(LOCAL_PATH)/../../src/crypto/pkcs7/pkcs7err.c \
+$(LOCAL_PATH)/../../src/crypto/poly1305/poly1305.c \
+$(LOCAL_PATH)/../../src/crypto/rand/md_rand.c \
+$(LOCAL_PATH)/../../src/crypto/rand/rand_egd.c \
+$(LOCAL_PATH)/../../src/crypto/rand/rand_err.c \
+$(LOCAL_PATH)/../../src/crypto/rand/rand_lib.c \
+$(LOCAL_PATH)/../../src/crypto/rand/rand_unix.c \
+$(LOCAL_PATH)/../../src/crypto/rand/rand_vms.c \
+$(LOCAL_PATH)/../../src/crypto/rand/rand_win.c \
+$(LOCAL_PATH)/../../src/crypto/rand/randfile.c \
+$(LOCAL_PATH)/../../src/crypto/rc2/rc2_cbc.c \
+$(LOCAL_PATH)/../../src/crypto/rc2/rc2_ecb.c \
+$(LOCAL_PATH)/../../src/crypto/rc2/rc2_skey.c \
+$(LOCAL_PATH)/../../src/crypto/rc2/rc2cfb64.c \
+$(LOCAL_PATH)/../../src/crypto/rc2/rc2ofb64.c \
+$(LOCAL_PATH)/../../src/crypto/rc4/rc4_enc.c \
+$(LOCAL_PATH)/../../src/crypto/rc4/rc4_skey.c \
+$(LOCAL_PATH)/../../src/crypto/ripemd/rmd_dgst.c \
+$(LOCAL_PATH)/../../src/crypto/ripemd/rmd_one.c \
+$(LOCAL_PATH)/../../src/crypto/rsa/rsa_ameth.c \
+$(LOCAL_PATH)/../../src/crypto/rsa/rsa_asn1.c \
+$(LOCAL_PATH)/../../src/crypto/rsa/rsa_chk.c \
+$(LOCAL_PATH)/../../src/crypto/rsa/rsa_crpt.c \
+$(LOCAL_PATH)/../../src/crypto/rsa/rsa_depr.c \
+$(LOCAL_PATH)/../../src/crypto/rsa/rsa_err.c \
+$(LOCAL_PATH)/../../src/crypto/rsa/rsa_gen.c \
+$(LOCAL_PATH)/../../src/crypto/rsa/rsa_lib.c \
+$(LOCAL_PATH)/../../src/crypto/rsa/rsa_meth.c \
+$(LOCAL_PATH)/../../src/crypto/rsa/rsa_none.c \
+$(LOCAL_PATH)/../../src/crypto/rsa/rsa_null.c \
+$(LOCAL_PATH)/../../src/crypto/rsa/rsa_oaep.c \
+$(LOCAL_PATH)/../../src/crypto/rsa/rsa_ossl.c \
+$(LOCAL_PATH)/../../src/crypto/rsa/rsa_pk1.c \
+$(LOCAL_PATH)/../../src/crypto/rsa/rsa_pmeth.c \
+$(LOCAL_PATH)/../../src/crypto/rsa/rsa_prn.c \
+$(LOCAL_PATH)/../../src/crypto/rsa/rsa_pss.c \
+$(LOCAL_PATH)/../../src/crypto/rsa/rsa_saos.c \
+$(LOCAL_PATH)/../../src/crypto/rsa/rsa_sign.c \
+$(LOCAL_PATH)/../../src/crypto/rsa/rsa_ssl.c \
+$(LOCAL_PATH)/../../src/crypto/rsa/rsa_x931.c \
+$(LOCAL_PATH)/../../src/crypto/rsa/rsa_x931g.c \
+$(LOCAL_PATH)/../../src/crypto/seed/seed.c \
+$(LOCAL_PATH)/../../src/crypto/seed/seed_cbc.c \
+$(LOCAL_PATH)/../../src/crypto/seed/seed_cfb.c \
+$(LOCAL_PATH)/../../src/crypto/seed/seed_ecb.c \
+$(LOCAL_PATH)/../../src/crypto/seed/seed_ofb.c \
+$(LOCAL_PATH)/../../src/crypto/sha/sha1_one.c \
+$(LOCAL_PATH)/../../src/crypto/sha/sha1dgst.c \
+$(LOCAL_PATH)/../../src/crypto/sha/sha256.c \
+$(LOCAL_PATH)/../../src/crypto/sha/sha512.c \
+$(LOCAL_PATH)/../../src/crypto/srp/srp_lib.c \
+$(LOCAL_PATH)/../../src/crypto/srp/srp_vfy.c \
+$(LOCAL_PATH)/../../src/crypto/stack/stack.c \
+$(LOCAL_PATH)/../../src/crypto/threads_none.c \
+$(LOCAL_PATH)/../../src/crypto/threads_pthread.c \
+$(LOCAL_PATH)/../../src/crypto/threads_win.c \
+$(LOCAL_PATH)/../../src/crypto/ts/ts_asn1.c \
+$(LOCAL_PATH)/../../src/crypto/ts/ts_conf.c \
+$(LOCAL_PATH)/../../src/crypto/ts/ts_err.c \
+$(LOCAL_PATH)/../../src/crypto/ts/ts_lib.c \
+$(LOCAL_PATH)/../../src/crypto/ts/ts_req_print.c \
+$(LOCAL_PATH)/../../src/crypto/ts/ts_req_utils.c \
+$(LOCAL_PATH)/../../src/crypto/ts/ts_rsp_print.c \
+$(LOCAL_PATH)/../../src/crypto/ts/ts_rsp_sign.c \
+$(LOCAL_PATH)/../../src/crypto/ts/ts_rsp_utils.c \
+$(LOCAL_PATH)/../../src/crypto/ts/ts_rsp_verify.c \
+$(LOCAL_PATH)/../../src/crypto/ts/ts_verify_ctx.c \
+$(LOCAL_PATH)/../../src/crypto/txt_db/txt_db.c \
+$(LOCAL_PATH)/../../src/crypto/ui/ui_err.c \
+$(LOCAL_PATH)/../../src/crypto/ui/ui_lib.c \
+$(LOCAL_PATH)/../../src/crypto/ui/ui_openssl.c \
+$(LOCAL_PATH)/../../src/crypto/ui/ui_util.c \
+$(LOCAL_PATH)/../../src/crypto/uid.c \
+$(LOCAL_PATH)/../../src/crypto/whrlpool/wp_block.c \
+$(LOCAL_PATH)/../../src/crypto/whrlpool/wp_dgst.c \
+$(LOCAL_PATH)/../../src/crypto/x509/by_dir.c \
+$(LOCAL_PATH)/../../src/crypto/x509/by_file.c \
+$(LOCAL_PATH)/../../src/crypto/x509/t_crl.c \
+$(LOCAL_PATH)/../../src/crypto/x509/t_req.c \
+$(LOCAL_PATH)/../../src/crypto/x509/t_x509.c \
+$(LOCAL_PATH)/../../src/crypto/x509/x509_att.c \
+$(LOCAL_PATH)/../../src/crypto/x509/x509_cmp.c \
+$(LOCAL_PATH)/../../src/crypto/x509/x509_d2.c \
+$(LOCAL_PATH)/../../src/crypto/x509/x509_def.c \
+$(LOCAL_PATH)/../../src/crypto/x509/x509_err.c \
+$(LOCAL_PATH)/../../src/crypto/x509/x509_ext.c \
+$(LOCAL_PATH)/../../src/crypto/x509/x509_lu.c \
+$(LOCAL_PATH)/../../src/crypto/x509/x509_obj.c \
+$(LOCAL_PATH)/../../src/crypto/x509/x509_r2x.c \
+$(LOCAL_PATH)/../../src/crypto/x509/x509_req.c \
+$(LOCAL_PATH)/../../src/crypto/x509/x509_set.c \
+$(LOCAL_PATH)/../../src/crypto/x509/x509_trs.c \
+$(LOCAL_PATH)/../../src/crypto/x509/x509_txt.c \
+$(LOCAL_PATH)/../../src/crypto/x509/x509_v3.c \
+$(LOCAL_PATH)/../../src/crypto/x509/x509_vfy.c \
+$(LOCAL_PATH)/../../src/crypto/x509/x509_vpm.c \
+$(LOCAL_PATH)/../../src/crypto/x509/x509cset.c \
+$(LOCAL_PATH)/../../src/crypto/x509/x509name.c \
+$(LOCAL_PATH)/../../src/crypto/x509/x509rset.c \
+$(LOCAL_PATH)/../../src/crypto/x509/x509spki.c \
+$(LOCAL_PATH)/../../src/crypto/x509/x509type.c \
+$(LOCAL_PATH)/../../src/crypto/x509/x_all.c \
+$(LOCAL_PATH)/../../src/crypto/x509/x_attrib.c \
+$(LOCAL_PATH)/../../src/crypto/x509/x_crl.c \
+$(LOCAL_PATH)/../../src/crypto/x509/x_exten.c \
+$(LOCAL_PATH)/../../src/crypto/x509/x_name.c \
+$(LOCAL_PATH)/../../src/crypto/x509/x_pubkey.c \
+$(LOCAL_PATH)/../../src/crypto/x509/x_req.c \
+$(LOCAL_PATH)/../../src/crypto/x509/x_x509.c \
+$(LOCAL_PATH)/../../src/crypto/x509/x_x509a.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/pcy_cache.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/pcy_data.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/pcy_lib.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/pcy_map.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/pcy_node.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/pcy_tree.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/v3_addr.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/v3_akey.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/v3_akeya.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/v3_alt.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/v3_asid.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/v3_bcons.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/v3_bitst.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/v3_conf.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/v3_cpols.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/v3_crld.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/v3_enum.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/v3_extku.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/v3_genn.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/v3_ia5.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/v3_info.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/v3_int.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/v3_lib.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/v3_ncons.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/v3_pci.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/v3_pcia.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/v3_pcons.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/v3_pku.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/v3_pmaps.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/v3_prn.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/v3_purp.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/v3_skey.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/v3_sxnet.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/v3_tlsf.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/v3_utl.c \
+$(LOCAL_PATH)/../../src/crypto/x509v3/v3err.c
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../src $(LOCAL_PATH)/../../src/crypto/include $(LOCAL_PATH)/../../src/crypto/modes $(LOCAL_PATH)/../../src/include $(LOCAL_PATH)/../ssl 
 
