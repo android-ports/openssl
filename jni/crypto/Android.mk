@@ -6,6 +6,8 @@ LOCAL_MODULE := libcrypto
 
 LOCAL_CFLAGS += -fPIC
 
+LOCAL_SHORT_COMMANDS := true
+
 LOCAL_SRC_FILES := $(LOCAL_PATH)/../../src/crypto/aes/aes_cbc.c \
 $(LOCAL_PATH)/../../src/crypto/aes/aes_cfb.c \
 $(LOCAL_PATH)/../../src/crypto/aes/aes_core.c \

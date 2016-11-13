@@ -10,6 +10,8 @@ LOCAL_LDFLAGS += -fPIE -pie
 
 LOCAL_STATIC_LIBRARIES := ssl crypto
 
+LOCAL_LDFLAGS += -latomic
+
 LOCAL_SRC_FILES := $(LOCAL_PATH)/../../src/apps/app_rand.c \
 $(LOCAL_PATH)/../../src/apps/apps.c \
 $(LOCAL_PATH)/../../src/apps/asn1pars.c \
